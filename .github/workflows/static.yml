@@ -4,7 +4,8 @@ name: Deploy static content to Pages
 on:
   # Runs on pushes targeting the default branch
   push:
-    branches: ["master"]
+    branches:
+      - "master"
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -36,8 +37,8 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
-          # Upload entire repository
-          path: 'white/ white/assets white/plugin white/about.html white/index.html'
+          # Specify the directories and files to upload as an array
+          path: 'white/'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
