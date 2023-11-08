@@ -84,7 +84,7 @@
 @media (max-width: 768px) {
 
   .circles-container {
-      width: auto; /* Allow the content to determine the width */
+      width: 60px; /* Allow the content to determine the width */
   }
 
   .rounded-circle {
