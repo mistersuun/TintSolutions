@@ -198,35 +198,56 @@
         justify-content: center;
         color: white;
     }
+    .container-btn {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%; /* Set the width as needed */
+    }
+    
+    .centered-button {
+        padding: 10px 20px;
+        background-color: #1d3557;
+        color: white;
+        border: none;
+        border-radius: 24px;
+        cursor: pointer;
+    }
+    
+    .centered-button:hover {
+        background-color: #0056b3;
+    }
+    
     .container-center{
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-evenly;
         width: 100%;
     }
-    .row-container{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
+    .row-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); /* Adjust the column count as needed */
+        grid-template-rows: 5fr; /* Set all rows to have the same height */
+        gap: 10px; /* Adjust the gap between items as needed */
+        align-items: center;
     }
+    
     .circles-container{
-        margin-left: 20px;
+        align-self: start; /* Align the circle element to the start (top) of its grid item */
+        width: 85px;
     }
     .column-container{
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-evenly;
         margin-top: 150px;
         height: 50px;
     }
     .rounded-circle{
         background-color: #1d3557;
-        width: 100px;
-        height: 100px;
-        border-radius: 60px;
         display: flex;
-        justify-content: center;
-        margin-left: 20px;
+        justify-content: space-evenly;
+        margin-left: 10px;
     }
     .subtitle{
         font-size: small;
@@ -1042,12 +1063,19 @@
         max-width: 80%;
         vertical-align: middle;
         border-radius: 4px;
+        border: none;
         }
-    .col-home iframe{
+    .col-home iframe .not-rounded{
         max-width: 80%;
         vertical-align: middle;
-        border-radius: 24px;
+        border: none !important;
         }
+        .col-home iframe .rounded{
+            max-width: 80%;
+            vertical-align: middle;
+            border-radius: 24px;
+            border: none !important;
+            }
     .col-home .thumb::before{
     content: '';
     width: 80%;
