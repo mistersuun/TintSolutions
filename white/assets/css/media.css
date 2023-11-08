@@ -72,3 +72,10 @@
 @media(max-width:320px) {
   
 }
+
+@media (max-width: 768px) {
+  iframe {
+      max-width: 100%; /* Ensure the iframe doesn't exceed the container's width */
+      height: auto; /* Maintain aspect ratio */
+  }
+}
