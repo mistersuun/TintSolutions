@@ -79,3 +79,16 @@
       height: auto; /* Maintain aspect ratio */
   }
 }
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+ 
+
+  .circles-container {
+      width: auto; /* Allow the content to determine the width */
+  }
+
+  .rounded-circle {
+      width: 100px; /* Set a fixed width for the circles */
+  }
+}
