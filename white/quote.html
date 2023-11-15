@@ -162,54 +162,109 @@
           
             <div style="width: 100%; background-color:white; border-radius: 28px; margin-top: 10%;">
                   <form id="form-contact1" style="margin-top: 40px;">
+
+                            <h2><center>Contact Info</center></h2>
+                            
                             <div class="form-group user-name" style="width: 80% !important; margin-left: 10%;">
-                                <input style="border-radius: 28px; width: 80%; color: black;" type="text" class="form-control" required id="name-contact-1" placeholder="Your Name">
+                                <input style="border-radius: 28px; width: 80%; color: black;" type="text" class="form-control" required id="name-contact-1" placeholder="Your Full Name*">
                             </div>
 
                             <div class="form-group user-email" style="width: 80% !important; margin-left: 10%;">
-                                <input style="border-radius: 28px; color: black;" type="email" class="form-control" required id="email-contact" placeholder="Your Email">
+                                <input style="border-radius: 28px; color: black;" type="email" class="form-control" required id="email-contact" placeholder="Your Email*">
                             </div>
 
                             <div class="form-group" style="width: 80% !important; margin-left: 10%;">
-                                <label for="project">Choose the project:</label>
+                              <input style="border-radius: 28px; color: black;" type="text" class="form-control" required id="company-contact" placeholder="Your Company">
+                            </div>
+
+                            <div class="form-group" style="width: 80% !important; margin-left: 10%;">
+                              <input style="border-radius: 28px; color: black;" type="number" class="form-control" required id="phone-contact" placeholder="Your phone number*">
+                            </div>
+
+                            <div class="form-group" style="width: 80% !important; margin-left: 12%;">
+                                <label for="project">The project:</label>
                                 <select style="border-radius: 24px;" name="project" id="project" form="project">
                                 <option value="architecture">Architecture</option>
                                 <option value="commercial">Commercial</option>
                                 <option value="residential">Residential</option>
+                                <option value="healthcare">Healthcare</option>
+                                <option value="office">Office</option>
+                                <option value="new construction">New Construction</option>
+                                <option value="front door">Front Door</option>
                                 <option value="other">Other</option>
                                 </select>
                             </div>
 
-                            <div class="form-group" style="width: 80% !important; margin-left: 10%;">
-                                <label for="Role">Choose your situation:</label>
+                            <div class="form-group" style="width: 80% !important; margin-left: 12%;">
+                                <label for="Role">Role in project:</label>
                                 <select style="border-radius: 24px;" name="role" id="role" form="role">
-                                <option value="volvo">Volvo</option>
-                                <option value="saab">Saab</option>
-                                <option value="opel">Opel</option>
-                                <option value="audi">Audi</option>
+                                <option value="home owner">Home owner</option>
+                                <option value="business owner">Business owner</option>
+                                <option value="Contractor">Contractor</option>
+                                <option value="Architect">Audi</option>
+                                <option value="Interior Designer">Interior Designer</option>
+                                <option value="Estimator">Estimator</option>
+                                <option value="Other">Other</option>
                                 </select>
                             </div>
 
-                            <div class="form-group" style="width: 80% !important; margin-left: 10%;">
-                                <label for="Role">Choose your situation:</label>
-                                <select style="border-radius: 24px;" name="role" id="role" form="role">
-                                <option value="volvo">Volvo</option>
-                                <option value="saab">Saab</option>
-                                <option value="opel">Opel</option>
-                                <option value="audi">Audi</option>
+                            <div class="form-group" style="width: 80% !important; margin-left: 12%;">
+                                <label for="color">Choose your color:</label>
+                                <select style="border-radius: 24px;" name="color" id="color" form="color">
+                                <option value="white">White</option>
+                                <option value="grey">Grey</option>
                                 </select>
                             </div>
 
-                            <div class="form-group user-email" style="width: 80% !important; margin-left: 10%;">
-                                <input style="border-radius: 28px;" type="email" class="form-control" required id="email-contact" placeholder="Your Email">
+                            <div class="form-group" style="width: 80% !important; margin-left: 12%;">
+                              <label for="installation">Installation Required:</label>
+                              <select style="border-radius: 24px;" name="installation" id="installation" form="installation">
+                              <option value="No">No, I only need the price of the film</option>
+                              <option value="Yes">Yes, Send me the price with installation</option>
+                              </select>
+                            </div>
+
+                            <div class="form-group" style="width: 80% !important; margin-left: 10%;">
+                              <input style="border-radius: 28px; color: black;" type="email" class="form-control" required id="quarefoot" placeholder="Your area in square/foot?">
+                            </div>
+
+                            <div class="form-group" style="width: 80% !important; margin-left: 10%;">
+                                <input style="border-radius: 28px; color: black;" type="email" class="form-control" required id="switches" placeholder="Number of switches in the room">
+                            </div>
+
+                            <div class="form-group" style="width: 80% !important; margin-left: 12%;">
+                              <label for="switches">Switch options:</label>
+                              <select style="border-radius: 24px;" name="color" id="color" form="color">
+                              <option value="Standard">Standard remote control</option>
+                              <option value="Lutron">Lutron Switch with remote</option>
+                              <option value="Lutron">Lutron Switch + Bridge Phone App</option>
+                              <option value="Lutron">Not needed (Personal Automation)</option>
+                              <option value="Not Sure">Not Sure</option>
+                              </select>
+                            </div>
+
+                            <div class="form-group" style="width: 80% !important; margin-left: 10%;">
+                              <input style="border-radius: 28px; width: 80%; color: black;" type="text" class="form-control" required id="name-contact-1" placeholder="Project Address">
+                            </div>
+
+                            <div class="form-group" style="width: 80% !important; margin-left: 10%;">
+                                <input style="border-radius: 28px; color: black;" type="email" class="form-control" required id="email-contact" placeholder="City">
+                            </div>
+
+                            <div class="form-group" style="width: 80% !important; margin-left: 10%;">
+                              <input style="border-radius: 28px; color: black;" type="text" class="form-control" required id="company-contact" placeholder="State/Province">
+                            </div>
+
+                            <div class="form-group" style="width: 80% !important; margin-left: 10%;">
+                              <input style="border-radius: 28px; color: black;" type="number" class="form-control" required id="phone-contact" placeholder="Postal/Zip Code">
                             </div>
                           
-                              <div class="form-group user-message" style="width: 80% !important; margin-left: 10%;">
-                                  <textarea style="border-radius: 28px;" class="form-control" required id="message-contact" placeholder="Your Message"></textarea>
-                                  <div class="success" id="mail_success">Thank you. Your message has been sent</div>
-                                  <div class="error" id="mail_failed">Error, email not sent</div>
-                              </div>
-                      <button style="border-radius: 28px; margin-left: 10%; margin-bottom: 5%;" type="submit" id="send-contact-1" class="btn-contact">Send Now</button>
+                            <div class="form-group user-message" style="width: 80% !important; margin-left: 10%;">
+                                <textarea style="border-radius: 28px; color: black;" class="form-control" required id="message-contact" placeholder="Additional Information"></textarea>
+                                <div class="success" id="mail_success">Thank you. Your message has been sent</div>
+                                <div class="error" id="mail_failed">Error, email not sent</div>
+                            </div>
+                      <button style="border-radius: 28px; margin-left: 10%; margin-bottom: 5%;" type="submit" id="send-contact-1" class="btn-contact">Get The Price</button>
                   </form>
             </div>
             
