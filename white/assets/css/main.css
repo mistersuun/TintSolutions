@@ -198,6 +198,9 @@
         justify-content: center;
         color: white;
     }
+    .testmedia{
+        width: 45%;
+    }
     .container-btn {
         display: flex;
         justify-content: space-evenly;

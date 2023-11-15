@@ -93,4 +93,9 @@
   .rounded-circle {
       width: 70px; /* Set a fixed width for the circles */
   }
+
+  .testmedia{
+    height: 350px !important;
+    width: 350px !important;
+  }
 }
